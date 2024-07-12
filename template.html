@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GrowMark</title>
+        <link rel="stylesheet" href="style.css">
+
+        <style>
+
+@media only screen and (max-width: 1024px) {.custom-class { position: sticky; top: 0; z-index: 1020; }}
+/* @media only screen and (max-width: 1024px) {.custom-class2 { position: sticky; top: 0; z-index: 1020; margin-top: 30px;}} */
+
+
+    </style>
+
+    </head>
+    <body class="bg-gray-50">
+        <!-- bg-[#4761FF] hidden lg:block -->
+         <nav class="custom-class">
+
+             
+             <div
+            class=" w-full h-16 text-black bg-white md:bg-[#4761FF] md:text-white items-center flex justify-between lg:justify-around px-4 md:px-4 ">
+            <div class="text-3xl font-bold">GrowMark</div>
+
+            <ul class="lg:flex hidden font-semibold text-white">
+                <li class="m-[10px] cursor-pointer">123 Street, New York,
+                    USA</li>
+                    <li class="m-[10px] cursor-pointer">info@example.com</li>
+                <li class="m-[10px] cursor-pointer">+012 345 67890</li>
+                <li class="m-[10px] cursor-pointer italic">f</li>
+                <li class="m-[10px] cursor-pointer italic">X</li>
+                <li
+                class="m-[10px] cursor-pointer bg-white rounded-3xl p-1 text-black">in</li>
+                
+            </ul>
+            <!--             
+                <div class="flex flex-col" >
+                    <div class="lg:hidden"> -->
+                <button class="text-4xl lg:hidden" onclick="dropdown()">&#8801</button>
+            <!-- </div> -->
+        <!-- </div> -->
+    </div>
+    <div class="  lg:hidden font-medium bg-white" id="div-dropdown" style="display: none;">
+        <ul class="p-[10px] lg:hidden cursor-pointer">
+            <li class="m-2 text-[#4761FF]">Home</li>
+            <li class="m-2">About</li>
+            <li class="m-2">Services</li>
+            <li class="m-2">Projects</li>
+            <li class="m-2" onclick="dropdown2()">Pages&#x25BC;</li>
+            <div class="lg:hidden font-medium cursor-pointer" id="div-dropdown2" style="display: none; background-color: rgb(250 245 255 / var(--tw-bg-opacity));">
+                <ul class="p-[10px] lg:hidden">
+                    <li class="m-2">Features</li>
+                    <li class="m-2">Our Team</li>
+                    <li class="m-2">Testimonial</li>
+                    <li class="m-2">Quotation</li>
+                    <li class="m-2">404Page</li>
+                </ul>
+            </div>
+            <li class="m-2">Contact</li>
+        </ul>
+    </div>
+    <!-- <div class="lg:hidden font-medium " id="div-dropdown2" style="display: none; background-color: rgb(250 245 255 / var(--tw-bg-opacity));">
+        <ul class="p-[10px] lg:hidden">
+            <li class="m-2">Features</li>
+            <li class="m-2">Our Team</li>
+            <li class="m-2">Testimonial</li>
+            <li class="m-2">Quotation</li>
+            <li class="m-2">404Page</li>
+        </ul>
+    </div> -->
+</nav>
+    
+    <!-- menus start here-->
+
+        <!-- <div class=" flex justify-between items-center lg:hidden">
+                    <div class="logo my-1.5 mx-5 text-3xl font-bold ">
+                        <h1>GrowMark</h1>
+                    </div>
+                    <div class="burger my-1.5 mx-5 " onclick="navToggle()">
+                        <div class="line-1 block h-0.5 w-6 m-1.5 bg-black"></div>
+                        <div class="line-2 block h-0.5 w-6 m-1.5 bg-black"></div>
+                        <div class="line-3 block h-0.5 w-6 m-1.5 bg-black"></div>
+                    </div>
+                </div> -->
+
+        <section
+            class="bg-white w-full z-[1000] shadow-xl hidden lg:flex justify-around items-center p-5"
+            style="position: sticky; top: 0; z-index: 1020;">
+<!-- &#x25BC; Pages ↓ -->
+            <ul class="text-black flex text-center text-lg cursor-pointer">
+                <li class="mr-6">Home</li>
+                <li class="mr-6">About</li>
+                <li class="mr-6">Services</li>
+                <li class="mr-6">Projects</li>
+                <li class="mr-6" onclick="dropdown3()" style="position: relative;">Pages&#x25BC;
+
+                    <ul class="p-[10px] font-medium bg-white text-black" id="div-dropdown3" style="display: none; position: absolute; flex-direction: column; text-align: left;">
+                        <li class="m-2">Features</li>
+                        <li class="m-2">Our Team</li>
+                        <li class="m-2">Testimonial</li>
+                        <li class="m-2">Quotation</li>
+                        <li class="m-2">404Page</li>
+                    </ul>
+
+
+                </li>
+                
+                <li>Contact</li>
+            </ul>
+              
+
+            <div class=" h-[40px] p-2 bg-blue-600 text-white rounded-3xl">
+                Get a Quote
+            </div>
+            
+                
+            
+
+        </section>
+        <!-- <div class=" font-medium bg-white text-black" id="div-dropdown3" > -->
+            <!-- <span class="p-[10px] font-medium bg-white text-black" id="div-dropdown3" style="display: none;">
+            <ul>
+                <li class="m-2">Features</li>
+                <li class="m-2">Our Team</li>
+                <li class="m-2">Testimonial</li>
+                <li class="m-2">Quotation</li>
+                <li class="m-2">404Page</li>
+            </ul>
+        </span> -->
+
+        <!-- </div>   -->
+
+        <!-- menu section ends here    https://karanmistryyy.pythonanywhere.com/media/tailwind/carousel-2.jpg -->
+
+        <!-- image section starts here -->
+        <section class=" overflow-hidden relative">
+            <div
+                id="slide1"
+                class=" mySlides h-[450px] md:h-full md:w-full flex flex-col items-center ">
+                <img class="h-[100%] max-w-max md:w-full"
+                    src="https://karanmistryyy.pythonanywhere.com/media/tailwind/carousel-1.jpg"
+                    alt>
+
+                <div
+                    class="text-start absolute top-[20%] text-white left-[5%] lg:w-1/2 xl:top-[33.33%] lg:left-[15%]">
+                    <h3
+                        class="text-xl font-light sm:text-2xl md:text-3xl">Welcome
+                        to <span
+                            class="font-medium text-2xl sm:text-4xl md:text-5xl">GrowMark</span></h3>
+                    <h1
+                        class="text-4xl font-bold sm:text-6xl md:text-7xl">Unlock
+                        Your Business Growth</h1>
+                    <button
+                        class="bg-blue-600 px-6 py-3 my-10 rounded-3xl text-lg">Explore
+                        More</button>
+                </div>
+
+            </div>
+
+
+
+            <div
+            id="slide2"
+            class=" mySlides h-[450px] md:h-full md:w-full flex flex-col items-center " style="display: none;">
+            <img class="h-[100%] max-w-max md:w-full"
+                src="https://karanmistryyy.pythonanywhere.com/media/tailwind/carousel-2.jpg"
+                alt>
+
+            <div
+                class="slider-text-2 text-end absolute top-[20%] text-white right-[5%] lg:w-1/2 xl:top-[33.33%] lg:right-[15%]">
+                <h3
+                    class="text-xl font-light sm:text-2xl md:text-3xl">Welcome
+                    to <span
+                        class="font-medium text-2xl sm:text-4xl md:text-5xl">GrowMark</span></h3>
+                <h1
+                    class="text-4xl font-bold sm:text-6xl md:text-7xl">Unlock
+                    Your Business Growth</h1>
+                <button
+                    class="bg-blue-600 px-6 py-3 my-10 rounded-3xl text-lg">Explore
+                    More</button>
+            </div>
+
+        </div>
+
+
+
+            <button
+                class="cursor-pointer absolute top-[40%] z-50 left-[2%] lg:left-[8%] text-white text-center rounded-full flex justify-center items-center bg-[#0065fd77] py-2 w-12 h-12 md:py-4 md:h-16 md:w-16 text-xl" onclick="slider()">&#60;</button>
+
+            <button
+                class="cursor-pointer absolute top-[40%] z-50 right-[2%] lg:right-[8%] text-white text-center rounded-full flex justify-center items-center bg-[#0065fd77] py-2 w-12 h-12 md:py-4 md:h-16 md:w-16 text-xl" onclick="slider()">></button>
+
+            <!-- </div>
+    <div class="text-start absolute top-[20%] text-white left-[5%] lg:w-1/2 xl:top-[33.33%] lg:left-[15%]">
+        <h3 class="text-xl font-light sm:text-2xl md:text-3xl">Welcome to <span class="font-medium text-2xl sm:text-4xl md:text-5xl">GrowMark</span></h3>
+        <h1 class="text-4xl font-bold sm:text-6xl md:text-7xl">Unlock Your Business Growth</h1>
+        <button class="bg-blue-600 px-6 py-3 my-10 rounded-3xl text-lg">Explore More</button>
+        
+    </div>
+    <button class="bg-blue-600 px-6 py-3 my-10 rounded-3xl text-lg absolute" style="top: 520px; left: 120px;">&#60;</button> 
+    <button class="bg-blue-600 px-6 py-3 my-10 rounded-3xl text-lg absolute" style="top: 520px; right: 120px;">></button> -->
+        </section>
+        <!-- image section ends here -->
+
+        <!-- Prize section -->
+        <section class="mt-[100px] mx-[20px] flex flex-wrap justify-center gap-1">
+
+            <div class="py-1">
+                <div
+                    class="flex flex-row md:flex-col flex-wrap bg-white text-black shadow-md p-10 w-auto md:w-[400px] lg:w-[410px] xl:w-[300px]">
+                    <div>
+                        <img
+                            src="https://karanmistryyy.pythonanywhere.com/media/tailwind/icon/icon-2.png"
+                            alt>
+                    </div>
+                    <div class="mt-3 flex flex-col flex-wrap">
+                        <h1 class="text-xl font-medium my-3">Award
+                            Winning</h1>
+                        <p class="font-light my-3">Stet stet justo dolor sed
+                            duo. Ut clita sea sit ipsum diam</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="py-1">
+                <div
+                    class="flex flex-row md:flex-col flex-wrap bg-white text-black shadow-md p-10 w-auto md:w-[400px] lg:w-[410px] xl:w-[300px]">
+                    <div>
+                        <img
+                            src="https://karanmistryyy.pythonanywhere.com/media/tailwind/icon/icon-2.png"
+                            alt>
+                    </div>
+                    <div class="mt-3 flex flex-col flex-wrap">
+                        <h1 class="text-xl font-medium my-3">Award
+                            Winning</h1>
+                        <p class="font-light my-3">Stet stet justo dolor sed
+                            duo. Ut clita sea sit ipsum diam</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="py-1">
+                <div
+                    class="flex flex-row md:flex-col flex-wrap bg-white text-black shadow-md p-10 w-auto md:w-[400px] lg:w-[410px] xl:w-[300px]">
+                    <div>
+                        <img
+                            src="https://karanmistryyy.pythonanywhere.com/media/tailwind/icon/icon-2.png"
+                            alt>
+                    </div>
+                    <div class="mt-3 flex flex-col flex-wrap">
+                        <h1 class="text-xl font-medium my-3">Award
+                            Winning</h1>
+                        <p class="font-light my-3">Stet stet justo dolor sed
+                            duo. Ut clita sea sit ipsum diam</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="py-1">
+                <div
+                    class="flex flex-row md:flex-col flex-wrap bg-white text-black shadow-md p-10 w-auto md:w-[400px] lg:w-[410px] xl:w-[300px]">
+                    <div>
+                        <img
+                            src="https://karanmistryyy.pythonanywhere.com/media/tailwind/icon/icon-2.png"
+                            alt>
+                    </div>
+                    <div class="mt-3 flex flex-col flex-wrap">
+                        <h1 class="text-xl font-medium my-3">Award
+                            Winning</h1>
+                        <p class="font-light my-3">Stet stet justo dolor sed
+                            duo. Ut clita sea sit ipsum diam</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+
+
+
+        <!-- <div class=" flex flex-wrap lg:flex-nowrap my-20 mx-8 justify-center gap-1 ">
+            <div class="grid-item p-10 bg-white md:max-w-xs shadow-md" >
+                <img class="my-3" src="https://karanmistryyy.pythonanywhere.com/media/tailwind/icon/icon-2.png" alt="">
+                <h1 class="text-xl font-medium my-3">Award Winning</h1>
+                <p class="font-light my-3">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam</p>
+            </div>
+
+            <div class=" p-10 bg-white md:max-w-xs shadow-md" >
+                <img class="my-3" src="https://karanmistryyy.pythonanywhere.com/media/tailwind/icon/icon-2.png" alt="">
+                <h1 class="text-xl font-medium my-3">Professional Staff</h1>
+                <p class="font-light my-3">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam</p>
+            </div>
+
+            <div class="  p-10 bg-white md:max-w-xs shadow-md" >
+                <img class="my-3" src="https://karanmistryyy.pythonanywhere.com/media/tailwind/icon/icon-2.png" alt="">
+                <h1 class="text-xl font-medium my-3">Fair Prices</h1>
+                <p class="font-light my-3">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam </p>
+            </div>
+
+            <div class=" p-10 bg-white md:max-w-xs shadow-md" >
+                <img class="my-3" src="https://karanmistryyy.pythonanywhere.com/media/tailwind/icon/icon-2.png" alt="">
+                <h1 class="text-xl font-medium my-3">24/7 Support</h1>
+                <p class="font-light my-3">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam </p>
+            </div>
+        </div> -->
+
+
+
+
+
+
+
+
+<!-- 
+
+  <div class="m-2">
+                <div class="flex text-start justify-center items-center flex-wrap bg-white text-black shadow-lg rounded-lg overflow-hidden w-auto lg:w-[350px]">
+                    <div>
+                        <img src="https://karanmistryyy.pythonanywhere.com/media/tailwind/project-4.jpg" alt="">
+                    </div>
+                    <div class="pl-2 mt-3 flex flex-col flex-wrap">
+                        <h1 class="text-xl font-medium mt-2">Digital Marketing</h1>
+                        <p class="font-light my-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam</p>
+                    </div>
+                </div>
+            </div>
+
+-->
+
+
+
+
+
+
+
+
+
+        <!-- Prize section ends here -->
+
+        <!-- About Us section -->
+        <!-- https://karanmistryyy.pythonanywhere.com/media/tailwind/icon/play.png -->
+
+        <!-- About section ends -->
+
+        <section class="flex text-center mt-[100px] flex-col p-3 justify-center  items-center">
+
+    <div class="pb-1"><h2 class="text-xl sm:text-2xl text-blue-600">Our Services</h2></div>
+    <div class="pb-4"><h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold">Digital Marketing <br> Services That We Offer</h1></div>
+    <div class=" flex flex-wrap  mx-8 sm:mx-0 justify-center gap-8 text-center 2xl:w-3/4 2xl:mx-auto">
+
+        <div class="py-6 flex flex-wrap">
+            
+                <div class="flex text-center justify-center items-center flex-row md:flex-col flex-wrap bg-white text-black shadow-lg p-10 w-auto lg:w-[350px]">
+                    <div>
+                        <img src="https://karanmistryyy.pythonanywhere.com/media/tailwind/icon/icon-5.png" alt="">
+                    </div>
+                    <div class="mt-3 flex flex-col flex-wrap">
+                        <h1 class="text-xl font-medium my-3">Digital Marketing</h1>
+                        <p class="font-light my-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam</p>
+                    </div>
+                </div>
+            
+        </div>
+
+        <div class="py-6 ">
+            <div >
+                <div class="flex text-center justify-center items-center flex-row md:flex-col flex-wrap bg-white text-black shadow-lg p-10 w-auto lg:w-[350px]">
+                    <div>
+                        <img src="https://karanmistryyy.pythonanywhere.com/media/tailwind/icon/icon-5.png" alt="">
+                    </div>
+                    <div class="mt-3 flex flex-col flex-wrap">
+                        <h1 class="text-xl font-medium my-3">Digital Marketing</h1>
+                        <p class="font-light my-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="py-6 ">
+            <div >
+                <div class="flex text-center justify-center items-center flex-row md:flex-col flex-wrap bg-white text-black shadow-lg p-10 w-auto lg:w-[350px]">
+                    <div>
+                        <img src="https://karanmistryyy.pythonanywhere.com/media/tailwind/icon/icon-5.png" alt="">
+                    </div>
+                    <div class="mt-3 flex flex-col flex-wrap">
+                        <h1 class="text-xl font-medium my-3">Digital Marketing</h1>
+                        <p class="font-light my-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="py-6 ">
+            <div >
+                <div class="flex text-center justify-center items-center flex-row md:flex-col flex-wrap bg-white text-black shadow-lg p-10 w-auto lg:w-[350px]">
+                    <div>
+                        <img src="https://karanmistryyy.pythonanywhere.com/media/tailwind/icon/icon-5.png" alt="">
+                    </div>
+                    <div class="mt-3 flex flex-col flex-wrap">
+                        <h1 class="text-xl font-medium my-3">Digital Marketing</h1>
+                        <p class="font-light my-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-6">
+            <div >
+                <div class="flex text-center justify-center items-center flex-row md:flex-col flex-wrap bg-white text-black shadow-lg p-10 w-auto lg:w-[350px]">
+                    <div>
+                        <img src="https://karanmistryyy.pythonanywhere.com/media/tailwind/icon/icon-5.png" alt="">
+                    </div>
+                    <div class="mt-3 flex flex-col flex-wrap">
+                        <h1 class="text-xl font-medium my-3">Digital Marketing</h1>
+                        <p class="font-light my-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-6">
+            <div >
+                <div class="flex text-center justify-center items-center flex-row md:flex-col flex-wrap bg-white text-black shadow-lg p-10 w-auto lg:w-[350px]">
+                    <div>
+                        <img src="https://karanmistryyy.pythonanywhere.com/media/tailwind/icon/icon-5.png" alt="">
+                    </div>
+                    <div class="mt-3 flex flex-col flex-wrap">
+                        <h1 class="text-xl font-medium my-3">Digital Marketing</h1>
+                        <p class="font-light my-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+
+
+
+<!-- https://karanmistryyy.pythonanywhere.com/media/tailwind/project-4.jpg -->
+
+
+        <!-- <section class="flex flex-col  items-baseline flex-wrap my-[30px]  mx-[40px]">
+            <div>
+
+            
+        <div class="flex flex-col lg:justify-start justify-center items-center text-center lg:text-left lg:items-start ">
+        <h2 class="text-xl sm:text-2xl text-blue-600">Our Projects</h2>
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold">We've Done Lot's of Awesome Projects</h1>
+    </div>
+    
+    <div class="">
+        <div class="flex justify-center text-center md:justify-end h-[50px] gap-5 m-5">
+            <button class="flex text-center items-center justify-center rounded-full text-black shadow-lg text-4xl w-[50px]">&#60;</button>
+            <button class="flex text-center items-center justify-center rounded-full text-black shadow-lg text-4xl w-[50px]">></button>
+    
+        </div>
+
+        <div class="flex ">
+
+            
+            <div class="m-2">
+                <div class="flex text-start justify-center items-center flex-wrap bg-white text-black shadow-lg rounded-lg overflow-hidden w-auto lg:w-[350px]">
+                    <div>
+                        <img src="https://karanmistryyy.pythonanywhere.com/media/tailwind/project-4.jpg" alt="">
+                    </div>
+                    <div class="pl-2 mt-3 flex flex-col flex-wrap">
+                        <h1 class="text-xl font-medium mt-2">Digital Marketing</h1>
+                        <p class="font-light my-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+        
+            <div class="m-2 hidden md:grid">
+                <div class=" flex text-start justify-center items-center flex-wrap bg-white text-black shadow-lg  rounded-lg overflow-hidden w-auto lg:w-[350px]">
+                    <div>
+                        <img src="https://karanmistryyy.pythonanywhere.com/media/tailwind/project-4.jpg" alt="">
+                    </div>
+                    <div class="pl-2 mt-3 flex flex-col flex-wrap">
+                        <h1 class="text-xl font-medium mt-2">Digital Marketing</h1>
+                        <p class="font-light my-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam</p>
+                    </div>
+                </div>
+            </div>
+        
+
+        
+            <div class="m-2 hidden md:grid">
+                <div class="flex text-start justify-center items-center flex-wrap bg-white text-black shadow-lg  rounded-lg overflow-hidden w-auto lg:w-[350px]">
+                    <div>
+                        <img src="https://karanmistryyy.pythonanywhere.com/media/tailwind/project-4.jpg" alt="">
+                    </div>
+                    <div class="pl-2 mt-3 flex flex-col flex-wrap">
+                        <h1 class="text-xl font-medium mt-2">Digital Marketing</h1>
+                        <p class="font-light my-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+            
+    </div>
+</div>
+   
+</section> -->
+
+
+
+
+<section class="flex flex-col  items-center flex-wrap mt-[100px] md:mx-[20px]">
+    <div>
+
+    
+        <div class="flex flex-col lg:justify-start justify-center items-center text-center lg:text-left lg:items-start ">
+            <h2 class="text-xl sm:text-2xl text-blue-600">Our Projects</h2>
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold">We've Done Lot's of <br> Awesome Projects</h1>
+        </div>
+
+<div class="">
+    <div class="flex justify-center text-center md:justify-end h-[50px] gap-5 m-5">
+        <button class="flex text-center items-center justify-center rounded-full text-black shadow-lg text-4xl w-[50px]">&#60;</button>
+        <button class="flex text-center items-center justify-center rounded-full text-black shadow-lg text-4xl w-[50px]">></button>
+
+    </div>
+    <!-- https://karanmistryyy.pythonanywhere.com/media/tailwind/project-4.jpg -->
+
+    <div class="flex flex-wrap">
+
+        
+        <div class="m-2">
+            <div class="flex text-start justify-center items-center flex-wrap bg-white text-black shadow-lg rounded-lg overflow-hidden w-auto md:w-[200px] lg:w-[250px] xl:w-[350px]">
+                <div>
+                    <img src="https://karanmistryyy.pythonanywhere.com/media/tailwind/project-4.jpg" alt="">
+                </div>
+                <div class="pl-2 mt-3 flex flex-col flex-wrap">
+                    <h1 class="text-xl font-medium mt-2">Digital Marketing</h1>
+                    <p class="font-light my-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam</p>
+                </div>
+            </div>
+        </div>
+        
+        
+    
+        <div class="m-2 hidden md:block">
+            <div class="flex text-start justify-center items-center flex-wrap bg-white text-black shadow-lg rounded-lg overflow-hidden w-auto md:w-[200px] lg:w-[250px] xl:w-[350px]">
+                <div>
+                    <img src="https://karanmistryyy.pythonanywhere.com/media/tailwind/project-1.jpg" alt="">
+                </div>
+                <div class="pl-2 mt-3 flex flex-col flex-wrap">
+                    <h1 class="text-xl font-medium mt-2">Digital Marketing</h1>
+                    <p class="font-light my-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam</p>
+                </div>
+            </div>
+        </div>
+    
+
+    
+        <div class="m-2 hidden md:block">
+            <div class="flex text-start justify-center items-center flex-wrap bg-white text-black shadow-lg rounded-lg overflow-hidden w-auto md:w-[200px] lg:w-[250px] xl:w-[350px]">
+                <div>
+                    <img src="https://karanmistryyy.pythonanywhere.com/media/tailwind/project-2.jpg" alt="">
+                </div>
+                <div class="pl-2 mt-3 flex flex-col flex-wrap">
+                    <h1 class="text-xl font-medium mt-2">Digital Marketing</h1>
+                    <p class="font-light my-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+        
+</div>
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="flex flex-wrap justify-center items-baseline mt-[100px] mx-[20px] gap-8">
+    <div class="w-[600px] ">
+        <h2 class="text-xl sm:text-2xl text-blue-600 text-center md:text-left">Get Quote</h2>
+        <h1 class="text-3xl sm:text-4xl xl:text-5xl font-bold text-center md:text-left">Need Our Expert Help? We're Here!</h1>
+        <p class="my-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et
+            eos. Clita
+            erat ipsum et lorem et sit, sed stet lorem sit clita duo justo
+        </p>
+        <p class="my-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et
+            eos. Clita
+            erat ipsum et lorem et sit, sed stet lorem sit clita duo justo
+        </p>
+        <button class="bg-transparent border-blue-500 w-4px" style="border: 3px; border-color: aqua; ">
+            <span class="p-2 text-xl font-medium text-blue-600">+012 345 6789</span>
+        </button>
+    </div>
+
+
+    
+    <div class="w-[600px]">
+        <h1 class="text-2xl md:text-3xl my-5 font-medium">Get A Free Quote</h1>
+    
+        <form action="">
+            <div class=" sm:flex gap-5">
+                <input class="w-full border border-gray-300 bg-transparent rounded-lg p-3 my-2" type="text" name="name" id="" placeholder="Your Name" required="">
+                <input class="w-full border border-gray-300 bg-transparent rounded-lg p-3 my-2" type="email" name="email" id="" placeholder="Your Email" required="">
+            </div>
+            <div class=" sm:flex gap-5">
+                <input class="w-full border border-gray-300 bg-transparent rounded-lg p-3 my-2" type="number" name="number" id="" placeholder="Your Number" required="">
+                <select name="choose" id="" class="w-full border border-gray-300 bg-transparent rounded-lg p-3 my-2">
+                    <option value="1">Digital Marketing</option>
+                    <option value="2">Social Marketing</option>
+                    <option value="3">Content Marketing </option>
+                    <option value="4">E-mail Marketing</option>
+                </select>
+            </div>
+            <textarea name="message" class="w-full border border-gray-300 bg-transparent rounded-lg p-3 my-2 h-32" id="" placeholder="Message"></textarea>
+            <button type="submit" class="text-white bg-blue-600 px-10 py-4 text-lg  w-full rounded-lg">Submit Now</button>
+        </form>
+
+    </div>
+</section>
+
+
+<section class="mt-[100px]  lg:mx-[20px]">
+    
+    <div class="flex m-4 flex-col justify-center items-center text-center">
+        <h2 class="text-xl sm:text-2xl text-blue-600">Our Team</h2>
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold">Our Expert People Ready <br> To Help You</h1>
+    </div>
+
+
+    <div class="flex flex-wrap justify-center items-center">
+
+        <div class="m-2  ">
+            <div class="flex text-start justify-center items-center flex-wrap bg-white text-black shadow-lg  rounded-lg overflow-hidden w-auto sm:w-[400px] md:w-[550px] lg:w-[485px] xl:w-[485px] 2xl:w-[350px]">
+                <div>
+                    <img src="https://karanmistryyy.pythonanywhere.com/media/tailwind/team-1.jpg" alt="">
+                </div>
+                <div class="pl-2 mt-3 flex flex-col flex-wrap text-center">
+                    <h1 class="text-xl font-medium my-2">Alex Robin</h1>
+                    <h2 class="text-lg text-blue-600 font-light my-2">Founder &amp; CEO</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="m-2 ">
+            <div class="flex text-start justify-center items-center flex-wrap bg-white text-black shadow-lg  rounded-lg overflow-hidden w-auto sm:w-[400px] md:w-[550px] lg:w-[485px] xl:w-[485px] 2xl:w-[350px]">
+                <div>
+                    <img src="https://karanmistryyy.pythonanywhere.com/media/tailwind/team-2.jpg" alt="">
+                </div>
+                <div class="pl-2 mt-3 flex flex-col flex-wrap text-center">
+                    <h1 class="text-xl font-medium my-2">Alex Robin</h1>
+                    <h2 class="text-lg text-blue-600 font-light my-2">Founder &amp; CEO</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="m-2  ">
+            <div class="flex text-start justify-center items-center flex-wrap bg-white text-black shadow-lg  rounded-lg overflow-hidden w-auto sm:w-[400px] md:w-[550px] lg:w-[485px] xl:w-[485px] 2xl:w-[350px]">
+                <div>
+                    <img src="https://karanmistryyy.pythonanywhere.com/media/tailwind/team-3.jpg" alt="">
+                </div>
+                <div class="pl-2 mt-3 flex flex-col flex-wrap text-center">
+                    <h1 class="text-xl font-medium my-2">Alex Robin</h1>
+                    <h2 class="text-lg text-blue-600 font-light my-2">Founder &amp; CEO</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="m-2 ">
+            <div class="flex text-start justify-center items-center flex-wrap bg-white text-black shadow-lg  rounded-lg overflow-hidden w-auto sm:w-[400px] md:w-[550px] lg:w-[485px] xl:w-[485px] 2xl:w-[350px]">
+                <div>
+                    <img src="https://karanmistryyy.pythonanywhere.com/media/tailwind/team-4.jpg" alt="">
+                </div>
+                <div class="pl-2 mt-3 flex flex-col flex-wrap text-center">
+                    <h1 class="text-xl font-medium my-2">Alex Robin</h1>
+                    <h2 class="text-lg text-blue-600 font-light my-2">Founder &amp; CEO</h2>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<section class="flex flex-col  items-center flex-wrap mt-[100px] lg:mx-[20px]">
+    <div>
+
+    
+        <div class="flex flex-col lg:justify-start justify-center items-center text-center lg:text-left lg:items-start ">
+            <h2 class="text-xl sm:text-2xl text-blue-600">Testimonial</h2>
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold">what Clients Say About Our<br>Services</h1>
+        </div>
+        
+        <!-- https://karanmistryyy.pythonanywhere.com/media/tailwind/project-4.jpg -->
+        <div class="flex justify-center text-center md:justify-center lg:justify-end h-[50px] gap-5 m-5">
+            <button class="flex text-center items-center justify-center rounded-full text-black shadow-lg text-4xl w-[50px]">&#60;</button>
+            <button class="flex text-center items-center justify-center rounded-full text-black shadow-lg text-4xl w-[50px]">></button>
+            
+        </div>
+        <div class="">
+
+    <div class="flex flex-wrap justify-start md:justify-center">
+
+        
+        <div class="m-2 hidden md:block  md:w-[500px] xl:w-[350px] lg:w-[270px] ">
+            <div class="flex text-start  items-center flex-wrap bg-white text-black shadow-lg rounded-lg overflow-hidden w-auto ">
+                <div style="margin: 10px;">
+                    <img style="border-radius: 100%; width: 100px; height: 100px; padding: 5px;" src="https://karanmistryyy.pythonanywhere.com/media/tailwind/team-1.jpg" alt="">
+                </div>
+                <div class=" pl-2 mt-3 flex flex-col flex-wrap" style="margin: 10px;">
+                    <p class="font-light my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nisi inventore mollitia deleniti facere expedita numquam asperiores quia omnis veniam.</p>
+                    <h1 class="text-xl font-medium my-2">Client Name</h1>
+                    <p>profession</p>
+                    
+                </div>
+            </div>
+        </div>
+        
+        
+    
+        <div class="m-2  md:w-[500px] sm:w-[500px] xl:w-[350px] lg:w-[270px]">
+            <div class="flex text-start  items-center flex-wrap bg-[#4761ff] text-white shadow-lg rounded-lg overflow-hidden w-auto ">
+                <div style="margin: 10px;">
+                    <img style="border-radius: 100%; width: 100px; height: 100px; padding: 5px;" src="https://karanmistryyy.pythonanywhere.com/media/tailwind/team-3.jpg" alt="">
+                </div>
+                <div class=" pl-2 mt-3 flex flex-col flex-wrap" style="margin: 10px;">
+                    <p class="font-light my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nisi inventore mollitia deleniti facere expedita numquam asperiores quia omnis veniam.</p>
+                    <h1 class="text-xl font-medium my-2">Client Name</h1>
+                    <p>profession</p>
+                    
+                </div>
+            </div>
+        </div>
+    
+
+    
+        <div class="m-2 hidden md:w-[500px]  md:block xl:w-[350px] lg:w-[270px]">
+            <div class="flex text-start  items-center flex-wrap bg-white text-black shadow-lg rounded-lg overflow-hidden w-auto ">
+                <div style="margin: 10px;">
+                    <img style="border-radius: 100%; width: 100px; height: 100px; padding: 5px;" src="https://karanmistryyy.pythonanywhere.com/media/tailwind/team-4.jpg" alt="">
+                </div>
+                <div class=" pl-2 mt-3 flex flex-col flex-wrap" style="margin: 10px;">
+                    <p class="font-light my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nisi inventore mollitia deleniti facere expedita numquam asperiores quia omnis veniam.</p>
+                    <h1 class="text-xl font-medium my-2">Client Name</h1>
+                    <p>profession</p>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+        
+</div>
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer -->
+
+<footer
+class="w-full bg-[#1C2035] px-4 text-[#B0B9AE] mt-[100px] py-10 md:px-12 ">
+            <div class="flex flex-col md:flex-row justify-between">
+
+                <div class="md:p-3 my-10">
+                    <h2 class="font-bold text-xl my-4 text-white">Our Office</h2>
+                    <p>123 Street, New York, USA</p>
+                    <p>+012 345 67890</p>
+                    <p>info@example.com</p>
+                </div>
+                
+                
+                
+                <div class="md:p-3 my-10">
+                    <h2 class="font-bold text-xl my-4 text-white">Quick Links</h2>
+                    <p>> About us</p>
+                    <p>> Contact Us</p>
+                    <p>> Our Services</p>
+                    <p>> Terms and Conditions</p>
+                    <p>> Support</p>
+                    
+                    
+                </div>
+
+                
+                <div class="md:p-3 my-10">
+                    <h2 class="font-bold text-xl my-4 text-white">Business Hours</h2>
+                    <p> Monday-Friday</p>
+                    <p class="text-white"> 09:00 am-07:00pm</p>
+                    <p> Saturday</p>
+                    <p class="text-white"> 09:00am-12:00pm</p>
+                    <p> Sunday</p>
+                    <p class="text-white"> Closed</p>
+                    
+                
+            </div>
+            
+            <div class="md:p-3 my-10">
+                
+                
+                <h2 class="font-bold text-xl mt-4">Newsletter</h2>
+                <p class="pb-2">Dolor amet sit justo amet elitr clita ipsum
+                    elitr est.</p>
+                    <input type="email" name
+                    class=" p-4 bg-transparent pl-2 w-9/12 outline-none border-2 border-white rounded-xl"
+                    id placeholder="Your Email">
+                    
+                    
+                </div>
+            </div>
+                
+            </footer>
+            
+            <section class="bg-[#111111] text-[#B0B9AE] p-8">
+                <div class="flex justify-center flex-wrap md:justify-around">
+                    <p class="text-center">© Your Site Name, <span class="text-gray-500">All Rights Reserved.</span></p>
+        <p class="text-gray-500 text-center">Designed By <span class="text-white">HTML Codex</span> Distributed By <span class="text-white">ThemeWagon</span></span></p>
+        
+    </div>
+    
+</section>
+
+        <!-- footer ends here -->
+
+
+
+        <script>
+
+function dropdown() {
+  
+
+  if (document.getElementById("div-dropdown").style.display == "block"){
+    document.getElementById("div-dropdown").style.display = "none";
+  }
+  else{
+    document.getElementById("div-dropdown").style.display = "block";
+  }
+
+
+
+//   document.getElementById("table2").style.display = "none";
+//   document.getElementById("table3").style.display = "none";
+  
+//   document.getElementById("btn-1").style.color = "#ff511a";
+  // document.getElementById("btn-1").style.borderColor = "black";
+//   document.getElementById("btn-2").style.color = "black";
+//   document.getElementById("btn-3").style.color = "black";
+
+}
+
+function dropdown2(){
+    if (document.getElementById("div-dropdown2").style.display == "block"){
+    document.getElementById("div-dropdown2").style.display = "none";
+  }
+  else{
+    document.getElementById("div-dropdown2").style.display = "block";
+  }
+}
+
+function dropdown3(){
+    if (document.getElementById("div-dropdown3").style.display == "flex"){
+    document.getElementById("div-dropdown3").style.display = "none";
+  }
+  else{
+    document.getElementById("div-dropdown3").style.display = "flex";
+  }
+}
+
+
+function slider(){
+    if (document.getElementById("slide1").style.display == "flex"){
+    document.getElementById("slide1").style.display = "none";
+    document.getElementById("slide2").style.display = "flex";
+
+  }
+  else{
+    document.getElementById("slide2").style.display = "none";
+    document.getElementById("slide1").style.display = "flex";
+
+  }
+}
+
+
+        </script>
+
+    </body>
+</html>
