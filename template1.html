@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+      @media only screen and (max-width:768px) {
+            .carousel-caption {
+              flex-direction: column;
+              align-items: center;
+            }
+          }
+
+          /* @media media-breakpoint-up () {
+  .custom-class {
+    display: block;
+  }
+    212741
+} 992px
+  768px
+  window.onscroll
+  margin-top: 845px;
+  margin-top: 900px;
+  */
+
+@media only screen and (max-width: 576px) {.custom-class { height: 100%;  width:140px }}
+@media only screen and (min-width: 768px) {.custom-class2 { width:100% }}
+@media only screen and (max-width:  768px) {.custom-class3 { background-color: #212741;}}
+@media only screen and (max-width: 576px) {.custom-class4 { margin-top: 940px; }}
+@media only screen and (min-width: 576px) {.custom-class5 { margin-top: 970px; }}
+@media only screen and (max-width:  992px) {.custom-class6 { width: 100%;}}
+@media only screen and (max-width:  1200px) {.custom-class7 { padding: 20px;}}
+@media only screen and (max-width:  1200px) {.custom-class8 { border-radius: 12px;}}
+@media only screen and (max-width:  768px) {.custom-class9 { margin-top: 60px;}}
+@media only screen and (min-width:  768px) {.custom-class10 { margin-top: 100px;}}
+
+
+
+
+
+
+/* .navbar-default.scrolled{
+  background:#212741;
+} */
+
+/* .navbar-fixed-top.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+} */
+
+
+/* .bg-pr.scrolled {
+background: yellow !important;
+} */
+
+/* .scrolled{
+            background-color: #212741;
+        } */
+
+
+
+
+
+
+
+
+        .bg-dark {
+      background-color: #212741 !important;
+    }
+
+    .navbar-dark .navbar-brand {
+      padding: 20px 0 10px 10px;
+      color: #fff;
+    }
+    .navbar-nav .nav-link {
+      color: #101011;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+      color: rgba(255, 255, 255, 1);
+    }
+    .navbar-dark .navbar-brand {
+       margin: 0;
+       width: 50%;
+       float: left;
+       display: inherit;
+    }
+    .navbar-brand {
+      color: #101011;
+      padding: 20px 0 10px 10px;
+    }
+
+    body .navbar {
+      padding: 6px 0 !important;
+
+    }
+
+  body .navbar-brand {
+    background: none;
+  }
+
+
+
+
+
+
+
+
+    </style>
+
+
+
+
+  </head>
+
+<body >
+
+
+
+
+
+
+  <!-- <header id="header" style="background-color: transparent; position: absolute; animation-name: ease-in-out;">
+    <nav class="navbar container  navbar-expand-lg navbar-light z-3 w-100 p-0 pt-1 pb-1">
+      <div class="container-fluid flex-shrink-5 p-0 flex-nowrap  ">
+        <a class="navbar-brand mx-3  mx-md-0 " href="#">
+          <img class="logo" src="https://karanmistryyy.pythonanywhere.com/media/weather/logo.png" alt=""></a>
+        <button class="navbar-toggler border-0 " id="burger-cont" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <div>
+            <div id="line-1" class="lines"></div>
+            <div id="line-2" class="lines"></div>
+            <div id="line-3" class="lines"></div>
+          </div>
+        </button>
+      </div>
+      <div class="container-fluid font-med">
+        <div class="collapse navbar-collapse align-content-center justify-content-end align-items-center" id="navbarNavDropdown">
+          <ul class="navbar-nav text-center">
+            <li class="nav-item mx-2 mx-xl-3">
+              <a class="nav-link home-link  orange" id="home-btn" aria-current="page" href="#top">Home</a>
+            </li>
+            <li class="nav-item mx-2 mx-xl-3">
+              <a class="nav-link home-link text-white orange" id="services-btn" href="#services-scroll">Services</a>
+            </li>
+            <li class="nav-item mx-2 mx-xl-3">
+              <a class="nav-link home-link text-white orange" id="about-btn" href="#about-scroll">About</a>
+            </li>
+            <li class="nav-item dropdown  mx-2 mx-xl-3 ">
+              <a class="nav-link home-link dropdown-toggle text-white orange" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Pages
+              </a>
+              <ul class="drop-main dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="drop-item dropdown-item text-white text-center  font-med" href="#">About Us</a></li>
+                <li><a class="drop-item dropdown-item text-white text-center font-med" href="#">Our Services</a></li>
+                <li><a class="drop-item dropdown-item text-white text-center font-med" href="#">Contact Us</a></li>
+              </ul>
+            </li>
+            <li class="nav-item  mx-2 mx-xl-3">
+              <a class="nav-link home-link text-white orange" id="testimonials-btn" href="#testimonials-scroll">Testimonials</a>
+            </li>
+            <li class="nav-item pb-3 pb-xl-0 ms-3 ">
+              <button type="button" class="btn btn-success">Contact Support</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header> -->
+
+
+
+
+
+
+
+
+
+
+
+  
+  <!-- <header > -->
+    <!-- <nav class="navbar container  navbar-expand-lg navbar-light z-3 w-100 p-0 pt-1 pb-1">
+    <div class="container-fluid flex-shrink-5 p-0 flex-nowrap  ">
+      <a class="navbar-brand mx-3  mx-md-0 " href="#">
+        <img class="logo" src="https://karanmistryyy.pythonanywhere.com/media/weather/logo.png" alt=""></a>
+      <button class="navbar-toggler border-0 " id="burger-cont" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <div>
+          <div id="line-1" class="lines"></div>
+          <div id="line-2" class="lines"></div>
+          <div id="line-3" class="lines"></div>
+        </div>
+      </button>
+    </div>
+  </nav> -->
+    <!-- <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+      </li>
+    </ul> 
+    
+    sticky-top
+    -->
+
+<header class="sticky-top" >
+
+  
+
+    <nav class="navbar  navbar-expand-lg custom-class3 " style="z-index:9;" >
+
+        <div class="container  flex-shrink-5">
+          <!-- <div class="row">
+          <div class="col-md"></div>
+          <div class="col-sm"></div>
+          <div class="col-sm"></div>
+          <div class="col-sm"></div>
+          
+           width="100px" height="100%"
+
+        </div> -->
+        <a class="navbar-brand" href="#">
+          <img src="logo.png"  class="custom-class img-fluid"  alt="Bootstrap">
+        </a>
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="flex-grow: 0; text-align: center;">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+            <li class="nav-item m-lg-3">
+              <a class="nav-link active"  style="color: white;" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item m-lg-3">
+              <a class="nav-link" href="#" style="color: white;">Service</a>
+            </li>
+            <li class="nav-item m-lg-3">
+              <a class="nav-link" href="#" style="color: white;">About</a>
+            </li>
+            <li class="nav-item dropdown m-lg-3">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                Pages
+              </a>
+              <ul class="dropdown-menu custom-class3" style="color: white; text-align: center;">
+                <li><a class="dropdown-item" href="#" style="color: white;">About us</a></li>
+                <li><a class="dropdown-item" href="#" style="color: white;">Our service</a></li>
+                <li><hr class="dropdown-divider" style="color: white;"></li>
+                <li><a class="dropdown-item" href="#" style="color: white;">Contact Us</a></li>
+              </ul>
+            </li>
+            <li class="nav-item m-lg-3" >
+              <a class="nav-link" aria-disabled="true" style="color: white;">Testimonials</a>
+            </li>
+            <li class="nav-item m-lg-3">
+              <button class="btn " style="background-color: #198754; color: white;" type="submit">Contact Support</button>
+            </li>
+          </ul>
+          <!-- <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-success" type="submit">Contact Support</button>
+          </form> -->
+        </div>
+      </div>
+    </nav>
+    
+  </header>
+
+
+
+
+<!-- 
+    
+<div >
+              <div class="carousel-caption" style="text-align: left; margin-bottom: 500px;">
+                  <h1>Get <span style="color: orangered;">ready</span> for your business <br> & <span style="color: orangered;">upgrade all aspects</span></h1>
+                  <div class="mt-4 mb-4" style="height: 10px; width: 100px; background-color: white; border-radius: 20px;">'</div>
+                  <p>Mexant HTML5 Template is provided for free of charge. This layout is based on Boostrap 5 CSS framework. Anyone can <br> download and edit for any professional website. Thank you for visiting TemplateMo website.</p>
+                  <button type="button" class="btn btn-primary">Discover More</button>
+                  <button type="button" class="btn btn-danger m-lg-3">Contact Us</button>
+                  </div>
+              
+            </div>
+
+
+-->
+
+
+
+
+
+
+
+
+
+    <!-- </header> -->
+
+
+
+  
+
+
+
+  <main>  
+    <section>
+
+    </section>
+
+<!-- 
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="\media\weather\slide-01.jpg" class="d-block caro-img" alt="...">
+
+            <div class="caro-text position-absolute top-0 left-0 d-flex flex-column justify-content-center text-white"
+              style="height: 100vh; width: 100vw;">
+              <div class=" d-block align-middle container  text-center  text-md-start ">
+                <h2 class="caro-head font-bolder">Get <span class="orange">ready</span> for your business &
+                  upgrade <span class="orange">all aspects</span></h2>
+                <div class="m-auto mx-md-0  mt-5 mb-5 d-block" id="ul-1"></div>
+                <p class="d-none  d-md-block ">Mexant HTML5 Template is provided for free of charge. This
+                  layout is based on Boostrap 5 CSS framework. Anyone can
+                  download and edit for any professional website. Thank you for
+                  visiting TemplateMo website.</p>
+                <div class="d-flex justify-content-center justify-content-md-start gap-3 ">
+                  <button type="button" class="btn btn-success p-2 px-3">Discover More</button>
+                  <button type="button" class="btn text-white bg-orange p-2 px-3">Contact Us</button>
+                </div>
+              </div>
+            </div>
+
+
+          </div> -->
+
+
+
+
+
+<!-- 
+          @media only screen and (max-width: 800px) {
+            .carousel-caption {
+              flex-direction: column;
+              align-items: center;
+            }
+          } -->
+
+
+
+<!-- 
+          
+
+<div class="carousel-caption" style="text-align: left; ">
+                
+                  
+                
+                      <h1>Get <span style="color: orangered;">ready</span> for your business <br> & <span style="color: orangered;">upgrade all aspects</span></h1>
+                      <p>Mexant HTML5 Template is provided for free of charge. This layout is based on Boostrap 5 CSS framework. Anyone can <br> download and edit for any professional website. Thank you for visiting TemplateMo website.</p>
+                      
+                      
+                      
+                      <div class="col"><div class="mt-4 mb-4" style="height: 10px; width: 100px; background-color: white; border-radius: 20px;">'</div></div>
+                      
+                      
+                      <div class="col">
+                        <button type="button" class="btn btn-primary">Discover More</button>
+                        <button type="button" class="btn btn-danger m-lg-3">Contact Us</button></div>
+
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                      </div>
+
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="carouselExample" class="carousel slide img-fluid" style="height: 100vh;  position:absolute;
+  width:100%;
+  top:0;">
+        <div class="carousel-inner img-fluid" style="height: 100vh;">
+          <div class="carousel-item active img-fluid" style="height: 100vh;">
+            <img src="https://karanmistryyy.pythonanywhere.com/media/weather/slide-01.jpg" height="100%" class="d-block custom-class2" alt="...">
+            <!-- <div class="carousel-caption">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div> -->
+           
+            <div class="carousel-caption text-lg-start" style="top: 50%; transform: translateY(-50%); bottom: initial; display: flex; flex-direction: column;" >
+              <h2 style="width: 100%; font-size: 2rem;">Get <span style="color: orangered;">ready</span> for your business <br> & <span style="color: orangered;">upgrade all aspects</span></h2>
+              <!-- <div class="mt-4 mb-4" style="height: 7px; width: 100px; background-color: white; border-radius: 20px; justify-content: center; align-items: center;">'</div> -->
+              <!-- <div class="m-auto mx-md-0  mt-5 mb-5 d-block" id="ul-1"></div> -->
+               <hr class="align-items-center" style="width: 100px;height: 7px;background-color: white;opacity: 1;border-radius: 20px;">
+               <!-- <div class=" text-lg-start" style="height: 10px; width: 100px; background-color: white; border-radius: 20px;">'</div> -->
+              <p class="d-none  d-md-block ">Mexant HTML5 Template is provided for free of charge. This layout is based on Boostrap 5 CSS framework. Anyone can download and edit for any professional website. Thank you for visiting TemplateMo website.</p>
+              <!-- <div class="gap-1" style="display: flex;"> -->
+                <div style="display: flex; " class="gap-3 mt-4 ">
+
+                  <button style="background-color: #198754; width: 130px; height: 50px;" type="button" class="btn btn-success p-1">Discover More</button>
+                  <button style="background-color: #ff511a; width: 130px; height: 50px;" type="button" class="btn text-white p-1 ">Contact Us</button>
+                </div>
+              <!-- 
+                 -->
+            </div>
+
+              
+                      
+                    
+            </div>
+            
+
+          <!-- </div>  height="100%"-->
+          <div class="carousel-item" style="height: 100vh;">
+            <img src="https://karanmistryyy.pythonanywhere.com/media/weather/slide-02.jpg" height="100%" class="d-block custom-class2" alt="...">
+
+            
+
+
+            
+            <!-- <div class="carousel-caption" style="text-align: left; margin-bottom: 400px;">
+              <h1>Get <span style="color: orangered;">ready</span> for your business <br> & <span style="color: orangered;">upgrade all aspects</span></h1>
+              <div class="mt-4 mb-4" style="height: 10px; width: 100px; background-color: white; border-radius: 20px;">'</div>
+              <p>Mexant HTML5 Template is provided for free of charge. This layout is based on Boostrap 5 CSS framework. Anyone can <br> download and edit for any professional website. Thank you for visiting TemplateMo website.</p>
+              <button type="button" class="btn btn-primary">Discover More</button>
+              <button type="button" class="btn btn-danger m-lg-3">Contact Us</button>
+              </div> 
+              
+              Digital Currency for you & Best upgrade  Tips
+              
+              -->
+
+
+              <div class="carousel-caption text-lg-start" style="top: 50%; transform: translateY(-50%); bottom: initial; display: flex; flex-direction: column;" >
+                <h2 style="width: 100%; font-size: 2rem;"><span style="color: orangered;">Digital</span>Currency for you & <br> Best upgrade <span style="color: orangered;">Crypto</span>Tips</h2>
+                <!-- <div class="m-auto mx-md-0  mt-5 mb-5 d-block" id="ul-1"></div> -->
+                 <!-- <hr class="align-items-center" style="width: 100px; height: 10px; background-color: white; opacity: 1; border-radius: 20px;"> -->
+                 <!-- <div class=" text-lg-start" style="height: 10px; width: 100px; background-color: white; border-radius: 20px;">'</div> -->
+               <hr class="align-items-center" style="width: 100px;height: 7px;background-color: white;opacity: 1;border-radius: 20px;">
+
+                <p class="d-none  d-md-block ">You will see a bunch of free CSS templates when you search on Google. TemplateMo website is probably the best one because it is 100% free. It does not ask you anything in return. You have a total freedom to use any template for any purpose.</p>
+                <!-- <div class="gap-1" style="display: flex;"> -->
+                  <!-- <div style="display: flex;">
+
+                    <button style="padding: 3px; margin-right: 6px; width:115px;" type="button" class="btn btn-primary">Discover More</button>
+                    <button style="padding: 1px; width:100px;" type="button" class="btn btn-danger">Contact Us</button>
+                  </div> -->
+                  <div style="display: flex; " class="gap-3 mt-4 ">
+
+                    <button style="background-color: #198754; width: 130px; height: 50px;" type="button" class="btn btn-success p-1">Discover More</button>
+                    <button style="background-color: #ff511a; width: 130px; height: 50px;" type="button" class="btn text-white p-1 ">Contact Us</button>
+                  </div>
+                
+              </div>
+
+
+             
+            </div>
+          <div class="carousel-item" style="height: 100vh;">
+            <img src="https://karanmistryyy.pythonanywhere.com/media/weather/slide-03.jpg" height="100%" class="d-block custom-class2" alt="...">
+
+            <!-- <div class="carousel-caption" style="text-align: left; margin-bottom: 400px;">
+              <h1>Get <span style="color: orangered;">ready</span> for your business <br> & <span style="color: orangered;">upgrade all aspects</span></h1>
+              <div class="mt-4 mb-4" style="height: 10px; width: 100px; background-color: white; border-radius: 20px;">'</div>
+              <p>Mexant HTML5 Template is provided for free of charge. This layout is based on Boostrap 5 CSS framework. Anyone can <br> download and edit for any professional website. Thank you for visiting TemplateMo website.</p>
+              <button type="button" class="btn btn-primary">Discover More</button>
+              <button type="button" class="btn btn-danger m-lg-3">Contact Us</button>
+              </div> -->
+             
+              <div class="carousel-caption text-lg-start" style="top: 50%; transform: translateY(-50%); bottom: initial; display: flex; flex-direction: column;" >
+                <h2 style="width: 100%; font-size: 2rem;">Best One in town & Crypto<br><span style="color: orangered;">Services</span></h2>
+                <!-- <div class="m-auto mx-md-0  mt-5 mb-5 d-block" id="ul-1"></div> -->
+                 <!-- <hr class="align-items-center" style="width: 100px; height: 10px; background-color: white; opacity: 1; border-radius: 20px;"> -->
+                 <!-- <div class=" text-lg-start" style="height: 10px; width: 100px; background-color: white; border-radius: 20px;">'</div> -->
+               <hr class="align-items-center" style="width: 100px;height: 7px;background-color: white;opacity: 1;border-radius: 20px;">
+                
+                 <p class="d-none  d-md-block ">When you browse through different tags on TemplateMo website, you can see a variety of CSS templates which are responsive website designs for different individual needs. Please tell your friends about our website. Thank you.</p>
+                <!-- <div class="gap-1" style="display: flex;"> -->
+                  <!-- <div style="display: flex;">
+
+                    <button style="padding: 3px; margin-right: 6px; width:115px;" type="button" class="btn btn-primary">Discover More</button>
+                    <button style="padding: 1px; width:100px;" type="button" class="btn btn-danger">Contact Us</button>
+                  </div> -->
+
+                  <div style="display: flex; " class="gap-3 mt-4 ">
+
+                    <button style="background-color: #198754; width: 130px; height: 50px;" type="button" class="btn btn-success p-1">Discover More</button>
+                    <button style="background-color: #ff511a; width: 130px; height: 50px;" type="button" class="btn text-white p-1 ">Contact Us</button>
+                  </div>
+                
+              </div>
+          
+          
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+<!--  -->
+
+
+  <!-- <div id="services-scroll"></div> -->
+  <section class="custom-class4 custom-class5" >
+      <div class="container">
+      <div class="row">
+        <div class="col-sm-6 ">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0" style="display: flex; justify-items: center; align-items: center; padding: 20px;">
+              <div class="col-md-4" style="text-align: center;">
+                <img src="layout.png" style="width: 100px;" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body" style="margin-right: 0.25rem; margin-left: 0.25rem;">
+                  <h5 class="card-title">CSS Templates</h5>
+                  <p class="card-text" >TemplateMo website is the best for you to explore and download free website templates.</p>
+                  <!-- <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col-sm-6 ">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0" style="display: flex; justify-items: center; align-items: center; padding: 20px;">
+              <div class="col-md-4" style="text-align: center;">
+                <img src="layout.png" style="width: 100px;" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body" style="margin-right: 0.25rem; margin-left: 0.25rem;">
+                  <h5 class="card-title">CSS Templates</h5>
+                  <p class="card-text" >TemplateMo website is the best for you to explore and download free website templates.</p>
+                  <!-- <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6 ">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0" style="display: flex; justify-items: center; align-items: center; padding: 20px;">
+              <div class="col-md-4" style="text-align: center;">
+                <img src="layout.png" style="width: 100px;" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body" style="margin-right: 0.25rem; margin-left: 0.25rem;">
+                  <h5 class="card-title">Responsive Designs</h5>
+                  <p class="card-text" >All of our css templates are 100% free to use for commercial or business websites.</p>
+                  <!-- <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-6">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0" style="display: flex; justify-items: center; align-items: center; padding: 20px;">
+              <div class="col-md-4" style="text-align: center;">
+                <img src="layout.png" style="width: 100px;" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body" style="margin-right: 0.25rem; margin-left: 0.25rem;">
+                  <h5 class="card-title">Mobile and Tablet ready!</h5>
+                  <p class="card-text" >Our HTML and CSS templates are well tested on mobile, tablet and desktop comptability.</p>
+                  <!-- <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0" style="display: flex; justify-items: center; align-items: center; padding: 20px;">
+              <div class="col-md-4" style="text-align: center;">
+                <img src="layout.png" style="width: 100px;" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body" style="margin-right: 0.25rem; margin-left: 0.25rem;">
+                  <h5 class="card-title">Full customizable</h5>
+                  <p class="card-text" >If you have any ideas and suggestion about new templates, feel free to let us know.</p>
+                  <!-- <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0" style="display: flex; justify-items: center; align-items: center; padding: 20px;">
+              <div class="col-md-4" style="text-align: center;">
+                <img src="layout.png" style="width: 100px;" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body" style="margin-right: 0.25rem; margin-left: 0.25rem;">
+                  <h5 class="card-title">Full customizable</h5>
+                  <p class="card-text" >If you have any ideas and suggestion about new templates, feel free to let us know.</p>
+                  <!-- <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  
+      <!--  -->
+<section class="container-fluid p-3" style="display: flex; align-items: center; justify-content: center; background-image:url('https://karanmistryyy.pythonanywhere.com/media/weather/slide-03.jpg'); margin-top: 100px;">
+  <!-- <div class="container my-5 " style=""> -->
+    <div class="container my-5" style=" text-align: center; color:  white; font-size: 30px;">
+      <div class="row">
+        <div class="col-md">
+          Business <span style="color: #00c96b;">Solutions</span> and <br> <span style="color: #ff511a;">Crypto</span> Invesments
+        </div>
+        <div class="col-md">
+          <button type="button" class="btn " style="text-align: right; background-color: #00c96b;">Discover More</button>
+          <button type="button" class="btn " style="text-align: right; background-color: #ff511a;">Contact Us</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="container my-5" style=" text-align: center; color:  white; font-size: 30px;">
+      Business <span style="color: green;">Solutions</span> and <br> <span style="color: orange;">Crypto</span> Invesments -->
+    <!-- </div> -->
+  <!-- </div>
+  <div class="container">
+    <button type="button" class="btn btn-success" style="text-align: right;">Discover More</button>
+    <button type="button" class="btn btn-danger" style="text-align: right;">Contact Us</button>
+  </div> -->
+
+</section>
+
+<!--  -->
+
+<section class="custom-class9 custom-class10">
+
+  <div class="container">
+    <div class="row gap-4" >
+      
+      <div class="col-lg overflow-x-auto" style="text-align: center;">
+        <span style="color: #ff511a;">ABOUT US</span>
+        <h2 style="margin-bottom: 25px;">Know us better</h2>
+        <div class="row gap-1 " style="margin-bottom: 25px;">
+          <div class="col-sm">
+            <button  class="btn px-2 py-3 m-1" style="color: #ff511a;
+              box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.1);
+              border-radius: 0.4rem;
+              width: 100%;
+              height: 100%;
+              max-width: 200px;
+          " id="btn-1" onclick="table1()" >Web Design</button>
+
+          </div>
+          <div class="col-sm">
+            <button  class="btn px-2 py-3 m-1" style="box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 0.4rem;
+            width: 100%;
+            height: 100%;
+            max-width: 200px;"  id="btn-2" onclick="table2()">Graphics</button>
+
+          </div>
+          <div class="col-sm">
+            <button  class="btn px-2 py-3 m-1" style="box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 0.4rem;
+            width: 100%;
+            height: 100%;
+            max-width: 200px;" id="btn-3" onclick="table3()">Web Coding</button>
+
+          </div>
+        </div>
+    <!-- <div class="container"> -->
+    <div class=" overflow-x-auto d-flex justify-content-between   justify-content-sm-evenly w-100" id="tables">
+
+      <table class="table" id="table1" >
+        <thead>
+          <tr>
+            <th scope="col">Project Title</th>
+            <th scope="col">Budget</th>
+            <th scope="col">Deadline</th>
+            <th scope="col">Client</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Website Redesing</th>
+            <td>$1,500 to $2,200</td>
+            <td>2022 Dec 12</td>
+            <td>Web Biz</td>
+          </tr>
+          <tr>
+            <th scope="row">Website Renovation</th>
+            <td>$2,500 to $3,600</td>
+            <td>2022 Dec 10</td>
+            <td>Online Ads</td>
+          </tr>
+          <tr>
+            <th scope="row">Marketing Plan</th>
+            <td>$2,500 to $4,200</td>
+            <td>2022 Dec 8</td>
+            <td>Web Biz</td>
+          </tr>
+          <tr>
+            <th scope="row">All-new Website</th>
+            <td>$3,000 to $6,600</td>
+            <td>2022 Dec 2</td>
+            <td>Web Presence</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table" id="table2" style="display: none;">
+        <tr>
+          <th>Project title</th>
+          <th>Budget</th>
+          <th>Deadline</th>
+          <th>client</th>
+        </tr>
+        <tr>
+          <th>Graphics Redesign</th>
+          <td>$500 to $800</td>
+          <td>2022 Nov 24</td>
+          <td>Media One</td>
+        </tr>
+        <tr>
+          <th>Digital Graphics</th>
+          <td>$1,500 to $3,000</td>
+          <td>2022 Nov 18</td>
+          <td>Second Media</td>
+        </tr>
+        <tr>
+          <th>New Artworks</th>
+          <td>$2,200 to $4,400</td>
+          <td>2022 Nov 10</td>
+          <td>Artwork Push</td>
+        </tr>
+        <tr>
+          <th>Complex Arts</th>
+          <td>$1,100 to $2,400</td>
+          <td>2022 Nov 3</td>
+          <td>Media One</td>
+        </tr>
+      </table>
+
+
+      <table class="table" id="table3" style="display: none;">
+        <tr>
+          <th>Project title</th>
+          <th>Budget</th>
+          <th>Deadline</th>
+          <th>client</th>
+        </tr>
+        <tr>
+          <th>Backend Coding</th>
+          <td>$2,000 to $5,000</td>
+          <td>2022 Nov 28</td>
+          <td>PHP MySQL</td>
+        </tr>
+        <tr>
+          <th>New Web App</th>
+          <td>$1,500 to $3,000</td>
+          <td>2022 Nov 18</td>
+          <td>Python Programming</td>
+        </tr>
+        <tr>
+          <th>Frontend Interactions</th>
+          <td>$3,000 to $6,000</td>
+          <td>2022 Nov 10</td>
+          <td>JavaScripts</td>
+        </tr>
+        <tr>
+          <th>Video Creations</th>
+          <td>$1,800 to $4,400</td>
+          <td>2022 Nov 3</td>
+          <td>Multimedia</td>
+        </tr>
+      </table>
+
+
+
+    </div>
+    <!-- </div> -->
+    
+      </div>
+      <div class="col-sm-5 custom-class6" style="padding: 25px;">
+        <h4 class="thick">
+          Please Tell us about your idea and how you want it to be
+        </h4>
+        <br />
+        <p>
+          You are allowed to use this template for your websites. You are
+          <span class="thick d-blue">Not allowed</span>
+          to redistribute the template zip file on any other template
+          websites.
+        </p>
+        <br />
+        <p>
+          Thank you for downloading and using our templates. Please tell
+          your friends about our website.
+        </p>
+        <button type="button" class="btn btn-success">Discover More</button>
+      </div>
+    </div>
+  </div>
+
+  </section>
+
+<!--  -->
+
+
+
+
+
+
+
+
+
+<!-- 
+<div class="container" style="align-items: center; justify-content: center;">
+      <img src="https://karanmistryyy.pythonanywhere.com/media/weather/calculator-image.png" alt="image">
+    </div>
+
+    <div class="container mt-4" style="align-items: center; justify-content: center; color: white;">
+      <span style="color: orangered; font-size: 20px;">Your Freedom</span><br>
+      <span style="font-size: 30px;">A Financial Plan</span><br>
+      
+      
+      <form>
+        <div style="display: flex;">
+          <span class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Your Names</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </span>
+          <span class="mb-3 px-2">
+            <label for="exampleInputPassword1" class="form-label">Your Email</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </span>
+        </div>
+        
+        
+          <div class="mb-3" style="width: 564px;">
+            <label for="exampleInputEmail1" class="form-label">Subject</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+
+
+          <div class="mb-3" style="width: 564px;">
+            <label for="disabledSelect" class="form-label">Your reason</label>
+            <select id="disabledSelect" class="form-select">
+              <option>Disabled select</option>
+            </select>
+          </div>
+      
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      
+      
+      
+      
+    </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="container-fluid" style="display: flex; background-image:url('https://karanmistryyy.pythonanywhere.com/media/weather/slide-03.jpg'); margin-top: 100px;">
+    <div class="container">
+      <div class="row" style="align-items: center;">
+        
+        <div class="col d-none d-xl-block" style="align-items: center; justify-content: center; height: 655px; padding-right: 100px;">
+          <img src="https://karanmistryyy.pythonanywhere.com/media/weather/calculator-image.png" width="700px" style="
+          position: relative;
+          top: -25px;
+      " alt="image">
+        </div>
+    
+        <div  class="col mt-4"  style="align-items: center; justify-content: center; color: white;">
+          <span style="color: #ff511a; font-size: 20px;">Your Freedom</span><br>
+          <span style="font-size: 30px;">A Financial Plan</span><br>
+          
+          
+          <form class="mb-3">
+            <!-- <div> -->
+            <div class="row  gap-md-3 w-100 " style="display: flex; margin-left: inherit; ">
+              <!-- <span class="mb-3"> -->
+                <div class="col-md px-md-0 my-3 px-0">
+
+                  <label for="exampleInputEmail1" class="form-label">Your Names</label>
+                  <input type="email" style="background-color: rgba(255, 255, 255, 0.342); border-color: rgba(255, 255, 255, 0.342); color: white;" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <!-- </span> -->
+              <div class="col-md pr-md-0 my-3 px-0 ">
+
+                <!-- <span class="mb-3 px-2"> -->
+                  <label for="exampleInputPassword1" class="form-label">Your Email</label>
+                  <input type="password" style="background-color: rgba(255, 255, 255, 0.342); border-color: rgba(255, 255, 255, 0.342); color: white;" class="form-control" id="exampleInputPassword1">
+                </div>
+              <!-- </span> -->
+            </div>
+            
+            <!-- <div style="display: flex; flex-direction: column; margin-bottom: 10px;"> -->
+
+              <div class="row my-3 w-100 m-auto" >
+                <label for="exampleInputEmail1" class="form-label">Subject</label>
+                <input style=" background-color: rgba(255, 255, 255, 0.342); border-color: rgba(255, 255, 255, 0.342); color: white;" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              
+              
+              <div class="row my-3 w-100 m-auto ">
+                <label for="disabledSelect" class="form-label">Your reason</label>
+                <select style=" background-color: rgba(255, 255, 255, 0.342); border-color: rgba(255, 255, 255, 0.342); color: white;" id="disabledSelect" class="form-select">
+                  <option style="background-color: gray; color: white;">Choose an option</option>
+                  <option style="background-color: gray; color: white;">Online Banking</option>
+                  <option style="background-color: gray; color: white;">Financial Control</option>
+                  <option style="background-color: gray; color: white;">Yearly Profit</option>
+                  <option style="background-color: gray; color: white;">Crypto Investment</option>
+                </select>
+              </div>
+            <!-- </div> -->
+          
+            
+            <button type="submit p-3" style="background-color: #ff511a; border-color: #ff511a;" class="btn btn-primary">Submit Now</button>
+          <!-- </div> -->
+          </form>
+          
+          
+          
+          
+        </div>
+      </div>
+    </div>
+      
+    </section>
+
+
+    <!-- style="object-fit: cover;object-position: left;"  -->
+
+    <section class="container" style="margin-top: 100px;">
+     <div style="text-align: center;">
+       <span class="mt-5" style="color: #ff511a;">TESTIMONIALS</span>
+       <br>
+       <h2 class="darkb display-6 fw-bold "><b>What They Say<b></h2> 
+        
+        
+        
+        
+          
+        
+          
+        <div id="carouselExampleIndicators" style="box-shadow: 2;" class="carousel slide" >
+          
+          <div class="carousel-indicators" style="background-color: dark;" >
+            <button style="width: 10px; height: 10px; border-radius: 100%; background-color: black;" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button style="width: 10px; height: 10px; border-radius: 100%; background-color: black;" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button style="width: 10px; height: 10px; border-radius: 100%; background-color: black;" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div style="padding-bottom: 25px;">
+          
+            
+            <div class="carousel-inner container">
+              
+              
+              
+              <div class="carousel-item active">
+                
+                <div class="mt-4" style="display: flex; text-align: left; align-items: center; justify-content: center; ">
+                  <div class="col-lg-9">
+                    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" style="
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: left;
+                ">
+                      <div class="col-md p-4 d-flex flex-column position-static">
+                        <p class="card-text mb-auto" style="font-weight: 400;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ipsa tempore, facilis facere perspiciatis dolores? Ea adipisci expedita architecto natus ex quae! Sunt voluptate fugiat repellat ad architecto, omnis doloremque asperiores vero ab aspernatur quam at excepturi repellendus perspiciatis aut? At alias non accusantium, officia obcaecati pariatur in nemo neque!
+                      </p>
+                      <h3 class="mt-4">David Eigenberg
+                      </h3>
+                      <h6 style="color: #00c96b !important" class="  "><strong> CEO of Mexant </strong></h6>
+                    </div>
+                    <div class="col-md custom-class7" style="max-height: 400px; max-width: 220px;">
+                      <img  src="https://karanmistryyy.pythonanywhere.com/media/weather/testimonials-01.jpg" class=" custom-class8 card-img-bottom" alt="...">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            
+            
+            
+            
+              <div class="carousel-item">
+                
+                <div class="mt-4" style="display: flex; text-align: left; align-items: center; justify-content: center; ">
+                  <div class="col-lg-9">
+                    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" style="
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: left;
+                ">
+                      <div class="col-md p-4 d-flex flex-column position-static">
+                        <p class="card-text mb-auto" style="font-weight: 400;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ipsa tempore, facilis facere perspiciatis dolores? Ea adipisci expedita architecto natus ex quae! Sunt voluptate fugiat repellat ad architecto, omnis doloremque asperiores vero ab aspernatur quam at excepturi repellendus perspiciatis aut? At alias non accusantium, officia obcaecati pariatur in nemo neque!
+                      </p>
+                      <h3 class="mt-4">David Eigenberg
+                      </h3>
+                      <h6 style="color: #00c96b !important" class="  "><strong> CEO of Mexant </strong></h6>
+                    </div>
+                    <div class="col-md custom-class7" style="max-height: 400px; max-width: 220px;">
+                      <img  src="https://karanmistryyy.pythonanywhere.com/media/weather/testimonials-01.jpg" class=" custom-class8 card-img-bottom" alt="...">
+                    </div>
+                  </div>
+                </div>
+              </div>
+                
+              </div>
+
+
+              
+              <div class="carousel-item">
+                
+                <div class="mt-4" style="display: flex; text-align: left; align-items: center; justify-content: center; ">
+                  <div class="col-lg-9">
+                    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" style="
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: left;
+                ">
+                      <div class="col-md p-4 d-flex flex-column position-static">
+                        <p class="card-text mb-auto" style="font-weight: 400;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ipsa tempore, facilis facere perspiciatis dolores? Ea adipisci expedita architecto natus ex quae! Sunt voluptate fugiat repellat ad architecto, omnis doloremque asperiores vero ab aspernatur quam at excepturi repellendus perspiciatis aut? At alias non accusantium, officia obcaecati pariatur in nemo neque!
+                      </p>
+                      <h3 class="mt-4">David Eigenberg
+                      </h3>
+                      <h6 style="color: #00c96b !important" class="  "><strong> CEO of Mexant </strong></h6>
+                    </div>
+                    <div class="col-md custom-class7" style="max-height: 400px; max-width: 220px;">
+                      <img  src="https://karanmistryyy.pythonanywhere.com/media/weather/testimonials-01.jpg" class=" custom-class8 card-img-bottom" alt="...">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+          
+        </div>
+      </div>
+        
+        
+  <!-- <div class="col-lg-9">
+    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+      <div class="col p-4 d-flex flex-column position-static">
+        <p class="card-text mb-auto">“Donec et nunc massa. Nullam non felis dignissim, dapibus turpis semper, vulputate lorem. Nam volutpat posuere tellus,in porttitor justo interdum nec. Aenean indapibus risus, in euismod ligula. Aliquam vel scelerisque elit.”
+        </p>
+        <h3 class="mb-0">David Eigenberg
+        </h3>
+        <strong class="d-inline-block mb-2 text-primary-emphasis">CEO of Mexant</strong>
+             
+            </div>
+            
+            
+            <div class="col-auto d-none d-lg-block">
+              <img src="https://karanmistryyy.pythonanywhere.com/media/weather/testimonials-01.jpg" class="card-img-bottom" alt="...">
+            </div>
+
+
+
+
+
+          </div>
+        </div> -->
+        
+      
+      
+    </section>
+
+
+<!--  -->
+
+<section class=" py-4" style="background-color: #212741; margin-top: 100px;">
+
+  <div class="container ">
+    <div class="row">
+      <div class="col" style="display: flex; align-items: center; justify-content: center;">
+        <img  src="https://karanmistryyy.pythonanywhere.com/media/weather/client-01.png" alt="">
+      </div>
+      <div class="col" style="display: flex; align-items: center; justify-content: center;">
+        <img src="https://karanmistryyy.pythonanywhere.com/media/weather/client-01.png" alt="">
+      </div>
+      <div class="col" style="display: flex; align-items: center; justify-content: center;">
+        <img  src="https://karanmistryyy.pythonanywhere.com/media/weather/client-01.png" alt="">
+      </div>
+      <div class="col" style="display: flex; align-items: center; justify-content: center;">
+        <img src="https://karanmistryyy.pythonanywhere.com/media/weather/client-01.png" alt="">    
+      </div>
+      <div class="col" style="display: flex; align-items: center; justify-content: center;">
+        <img src="https://karanmistryyy.pythonanywhere.com/media/weather/client-01.png" alt="">
+      </div>
+      <div class="col" style="display: flex; align-items: center; justify-content: center;">
+        <img src="https://karanmistryyy.pythonanywhere.com/media/weather/client-01.png" alt=""> 
+      </div>
+    </div>
+<!-- 
+    <img class="px-4" src="https://karanmistryyy.pythonanywhere.com/media/weather/client-01.png" alt="">
+    <img class="px-4"  src="https://karanmistryyy.pythonanywhere.com/media/weather/client-01.png" alt="">
+    <img class="px-4"  src="https://karanmistryyy.pythonanywhere.com/media/weather/client-01.png" alt="">
+    <img class="px-4"  src="https://karanmistryyy.pythonanywhere.com/media/weather/client-01.png" alt="">
+    <img class="px-4"  src="https://karanmistryyy.pythonanywhere.com/media/weather/client-01.png" alt="">
+    <img class="px-4"  src="https://karanmistryyy.pythonanywhere.com/media/weather/client-01.png" alt=""> -->
+
+
+  </div>
+
+</section>
+
+
+
+
+</main>
+
+
+
+<footer style="background-color: #181d30; color: white;">
+
+  <div class="container p-3" style="align-items: center; justify-content: center; text-align: center;">
+
+    <p>Copyright © 2022 Mexant Co., Ltd. All Rights Reserved.</p>
+    <p>Designed by <span style="color: #ff511a;">TemplateMo</span> Distributed By  <span style="color: #ff511a;">ThemeWagon</span></p>
+
+  </div>
+
+  </footer>
+
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+
+      <script>
+      
+      var nav = document.querySelector('header');
+  window.addEventListener('scroll', function() {
+    if (window.pageYOffset > 100) {
+      nav.classList.add('bg-dark', 'shadow');
+    } else {
+      nav.classList.remove('bg-dark', 'shadow');
+    }
+  });
+
+
+  function table1() {
+  
+
+  document.getElementById("table1").style.display = "inline-table";
+  document.getElementById("table2").style.display = "none";
+  document.getElementById("table3").style.display = "none";
+  
+  document.getElementById("btn-1").style.color = "#ff511a";
+  // document.getElementById("btn-1").style.borderColor = "black";
+  document.getElementById("btn-2").style.color = "black";
+  document.getElementById("btn-3").style.color = "black";
+
+}
+function table2() {
+
+
+  document.getElementById("table1").style.display = "none";
+  document.getElementById("table2").style.display = "inline-table";
+  document.getElementById("table3").style.display = "none";
+  
+  document.getElementById("btn-2").style.color = "#ff511a";
+  // document.getElementById("btn-2").style.borderColor = "black";
+  document.getElementById("btn-3").style.color = "black";
+  document.getElementById("btn-1").style.color = "black";
+}
+function table3() {
+ 
+
+  document.getElementById("table1").style.display = "none";
+  document.getElementById("table2").style.display = "none";
+  document.getElementById("table3").style.display = "inline-table";
+  
+  document.getElementById("btn-3").style.color = "#ff511a";
+  // document.getElementById("btn-3").style.borderColor = "black";
+  document.getElementById("btn-2").style.color = "black";
+  document.getElementById("btn-1").style.color = "black";
+
+
+}
+
+
+        
+      
+      </script>
+</body>
+</html>
